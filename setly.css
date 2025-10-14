@@ -1,0 +1,88 @@
+/* ====== Style untuk Rafa News ====== */
+
+/* Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 3px 6px srgba(242, 11, 11, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Form pencarian */
+#searchForm input {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+#searchForm input:focus {
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
+    border-color: #0d6efd;
+}
+
+#searchForm button {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchForm button:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+
+/* Kartu berita */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Footer kartu berita */
+.card-footer {
+    background-color: #f1f1f1;
+    border-top: none;
+    font-size: 0.9rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    #searchForm input {
+        width: 70% !important;
+    }
+
+    #searchForm button {
+        width: 25%;
+    }
+}
